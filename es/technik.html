@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Técnica – Boo.</title>
+<meta name="description" content="Datos técnicos de Boo.: pantalla redonda de 240 px, ESP32-C3, sensor de posición, micrófono, altavoz, luz ambiental de 11 LED, batería con USB-C, esfera de Ø 92 mm.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Técnica – Boo.">
+<meta property="og:description" content="Datos técnicos de Boo.: pantalla redonda de 240 px, ESP32-C3, sensor de posición, micrófono, altavoz, luz ambiental de 11 LED, batería con USB-C, esfera de Ø 92 mm.">
+<meta property="og:image" content="../assets/bilder/hero-nacht-1400.webp">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<link rel="alternate" hreflang="de" href="../technik.html">
+<link rel="alternate" hreflang="en" href="../en/technik.html">
+<link rel="alternate" hreflang="fr" href="../fr/technik.html">
+<link rel="alternate" hreflang="es" href="../es/technik.html">
+<link rel="alternate" hreflang="it" href="../it/technik.html">
+<link rel="icon" href="../assets/boo-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/boo-256.png">
+<link rel="preload" href="../assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/boo.css?v=f8169639">
+</head>
+<body>
+<a class="sr-sprung" href="#inhalt" style="position:absolute;left:-9999px">Ir al contenido</a>
+<header class="nav">
+  <div class="innen">
+    <a class="marke" href="index.html" aria-label="Boo. – Inicio">Boo<span class="punkt">.</span></a>
+    <button class="menue" aria-label="Menú" aria-expanded="false"><span></span></button>
+    <ul>
+      <li><a href="funktionen.html">Funciones</a></li>
+      <li><a href="rollen.html">Personajes</a></li>
+      <li><a href="network.html">Boo Network</a></li>
+      <li><a href="privatsphaere.html">Privacidad</a></li>
+      <li><a href="technik.html" aria-current="page">Técnica</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <details class="sprache">
+      <summary aria-label="Elegir idioma">ES</summary>
+      <div class="sprache-liste">
+        <a href="../technik.html" hreflang="de" lang="de"><b>DE</b> Deutsch</a>
+        <a href="../en/technik.html" hreflang="en" lang="en"><b>EN</b> English</a>
+        <a href="../fr/technik.html" hreflang="fr" lang="fr"><b>FR</b> Français</a>
+        <a href="../es/technik.html" hreflang="es" lang="es" aria-current="true"><b>ES</b> Español</a>
+        <a href="../it/technik.html" hreflang="it" lang="it"><b>IT</b> Italiano</a>
+      </div>
+    </details>
+    <a class="pille an nav-cta" href="index.html#warteliste">Lista de espera</a>
+  </div>
+</header>
+<main id="inhalt">
+<section class="seitenkopf">
+  <svg class="ringe" viewBox="0 0 800 800" style="right:-220px;top:-120px;width:800px" aria-hidden="true"><circle cx="400" cy="400" r="390"/><circle class="lauf" cx="400" cy="400" r="320"/><circle cx="400" cy="400" r="250"/><circle class="lauf rueck" cx="400" cy="400" r="180"/></svg>
+  <div class="innen">
+    <span class="label rein">Técnica</span>
+    <h1 class="rein" style="--i:1;margin-top:20px;max-width:13ch">Lo que lleva la esfera dentro.</h1>
+    <p class="unter rein" style="--i:2">Electrónica, placa, firmware y carcasa: todo de desarrollo propio. Aquí tienes los datos del prototipo actual.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="innen">
+    <div class="bild breit rein"><img src="../assets/bilder/explosion-1400.webp" srcset="../assets/bilder/explosion-800.webp 800w, ../assets/bilder/explosion-1400.webp 1400w, ../assets/bilder/explosion-2800.webp 2800w" sizes="100vw" alt="Vista explosionada de Boo.: cara, pantalla, módulos, placa principal, portapilas, esfera" loading="lazy" decoding="async"></div>
+    <p class="bildunter">De delante hacia atrás: cara con sujeción magnética, pantalla redonda, ESP32-C3, sensor de posición y amplificador, placa principal, portapilas con celda 18650, esfera.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="innen raster2" style="align-items:start">
+    <div class="rein">
+      <span class="label">Ficha técnica</span>
+      <h2>Prototipo, otoño de 2026.</h2>
+      <p class="unter">Valores para la pequeña serie de la fase de pruebas. Hasta la serie, todavía pueden cambiar bastantes cosas.</p>
+    </div>
+    <div class="rein" style="--i:1">
+      <table class="daten">
+        <tr><th>Carcasa</th><td>Esfera de Ø 92 mm, 88 mm de alto <span>· parte superior blanca y translúcida, cara negra con imanes</span></td></tr>
+        <tr><th>Pantalla</th><td>Redonda, 1,28 pulgadas, 240 × 240 píxeles, IPS</td></tr>
+        <tr><th>Procesador</th><td>ESP32-C3, red inalámbrica de 2,4 GHz</td></tr>
+        <tr><th>Sensores</th><td>Sensor de posición (aceleración y giro) <span>· para levantar, agitar, tocar y dejar</span></td></tr>
+        <tr><th>Audio</th><td>Micrófono digital, amplificador, altavoz</td></tr>
+        <tr><th>Luz ambiental</th><td>11 LED RGB controlables por separado</td></tr>
+        <tr><th>Batería</th><td>Iones de litio, 18650 <span>· carga por USB-C</span></td></tr>
+        <tr><th>Autonomía</th><td>Unas 35 horas de uso normal <span>· calculado, no medido todavía</span></td></tr>
+        <tr><th>Software</th><td>App para Windows, Linux y Android <span>· iPhone, más adelante</span></td></tr>
+        <tr><th>IA</th><td>Boo. Server en tu PC o servicio en la nube</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="innen raster2">
+    <figure class="rein" style="margin:0"><div class="bild"><img src="../assets/bilder/explosion-vorn-1400.webp" srcset="../assets/bilder/explosion-vorn-800.webp 800w, ../assets/bilder/explosion-vorn-1400.webp 1400w, ../assets/bilder/explosion-vorn-2400.webp 2400w" sizes="(max-width:900px) 100vw, 50vw" alt="Vista explosionada desde delante sobre fondo claro" loading="lazy" decoding="async"></div><p class="bildunter">Cara frontal de la placa principal: pantalla, ESP32-C3, sensor de posición y amplificador van enchufados.</p></figure>
+    <figure class="rein" style="--i:1;margin:0"><div class="bild"><img src="../assets/bilder/explosion-hinten-1400.webp" srcset="../assets/bilder/explosion-hinten-800.webp 800w, ../assets/bilder/explosion-hinten-1400.webp 1400w, ../assets/bilder/explosion-hinten-2400.webp 2400w" sizes="(max-width:900px) 100vw, 50vw" alt="Vista explosionada desde atrás con los LED y el portapilas" loading="lazy" decoding="async"></div><p class="bildunter">Cara trasera: 11 LED para la luz ambiental, portapilas y módulo de carga con USB-C.</p></figure>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="innen raster2">
+    <figure class="rein" style="margin:0"><div class="bild"><img src="../assets/bilder/boo-hinten-1400.webp" srcset="../assets/bilder/boo-hinten-800.webp 800w, ../assets/bilder/boo-hinten-1400.webp 1400w, ../assets/bilder/boo-hinten-2000.webp 2000w" sizes="(max-width:900px) 100vw, 50vw" alt="Parte trasera de Boo. con rejilla del altavoz y toma de carga" loading="lazy" decoding="async"></div><p class="bildunter">Parte trasera: rejilla del altavoz y USB-C.</p></figure>
+    <div class="rein" style="--i:1">
+      <span class="label">Una sola placa</span>
+      <h2>Todo en una placa redonda.</h2>
+      <p class="unter">La placa principal está justo detrás de la cara. Delante van enchufados la pantalla y los módulos; detrás están el portapilas, el módulo de carga y los LED de la luz ambiental.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="innen raster2">
+    <div class="rein">
+      <span class="label" style="--c:var(--orange)">Luz ambiental</span>
+      <h2>Luz que atraviesa la pared.</h2>
+      <p class="unter">Los LED están detrás de la cara e iluminan el interior de la esfera. La fina pared blanca difunde la luz hasta que toda la esfera brilla de forma uniforme.</p>
+    </div>
+    <div class="bild rein" style="--i:1"><img src="../assets/bilder/moodlicht-regenbogen-1400.webp" srcset="../assets/bilder/moodlicht-regenbogen-800.webp 800w, ../assets/bilder/moodlicht-regenbogen-1400.webp 1400w, ../assets/bilder/moodlicht-regenbogen-2000.webp 2000w" sizes="(max-width:900px) 100vw, 50vw" alt="Boo. con la luz ambiental en colores del arcoíris" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="innen">
+    <div class="karte dunkel rein" style="padding:clamp(26px,4vw,44px)">
+      <span class="label grau">Nota</span>
+      <p style="max-width:72ch;margin-top:12px">Boo. es un prototipo y todavía no está a la venta. Las pruebas y marcados necesarios para la venta siguen pendientes. Todas las imágenes son renders hechos a partir de los datos de diseño; la imagen de la pantalla procede del firmware real.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="fuss">
+  <div class="innen">
+    <div class="spalten">
+      <div>
+        <a class="marke" href="index.html">Boo<span class="punkt">.</span></a>
+        <p class="klein" style="margin-top:14px;max-width:34ch">El pequeño espíritu de IA para tu escritorio. Desarrollado en Baden-Wurtemberg, Alemania.</p>
+      </div>
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="funktionen.html">Funciones</a></li>
+          <li><a href="rollen.html">Personajes</a></li>
+          <li><a href="network.html">Boo Network</a></li>
+          <li><a href="technik.html">Técnica</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Confianza</h4>
+        <ul>
+          <li><a href="privatsphaere.html">Privacidad</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="ueber.html">Sobre Boo.</a></li>
+          <li><a href="investoren.html">Inversores</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="../impressum.html">Aviso legal (alemán)</a></li>
+          <li><a href="../datenschutz.html">Protección de datos (alemán)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="unten">
+      <span>© <span data-jahr>2026</span> Boo. · Prototipo en desarrollo, todavía no a la venta. Las imágenes son renders de los datos de diseño.</span>
+      <span class="mono">BOO.</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/boo_gesicht.js" defer></script>
+<script src="../assets/boo.js?v=f8169639" defer></script>
+</body>
+</html>
